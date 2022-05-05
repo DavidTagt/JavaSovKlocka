@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Edit time"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TimePicker
+        android:id="@+id/tpCreateTimepicker"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:timePickerMode="spinner" />
+
+
+    <EditText
+        android:id="@+id/etCreateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alarm name"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout" />
+
+    <EditText
+        android:id="@+id/etCreateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alarm Description"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout" />
+
+
+
+    <CheckBox
+        android:id="@+id/cbCreateRecurring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Recurring Alarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_title" />
+
+    <LinearLayout
+        android:id="@+id/fragment_createalarm_recurring_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/cbCreateRecurring">
+
+        <CheckBox
+            android:id="@+id/cbCreateMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon" />
+
+        <CheckBox
+            android:id="@+id/cbCreateTue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tue" />
+
+        <CheckBox
+            android:id="@+id/cbCreateWed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wed" />
+
+        <CheckBox
+            android:id="@+id/cbCreateThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu" />
+
+        <CheckBox
+            android:id="@+id/cbCreateFri"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Fri" />
+
+        <CheckBox
+            android:id="@+id/cbCreateSat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sat" />
+
+        <CheckBox
+            android:id="@+id/cbCreateSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

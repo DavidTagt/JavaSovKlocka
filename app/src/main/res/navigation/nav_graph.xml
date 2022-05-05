@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.gesall.mat_och_sov_klocka.fragments.HomeFragment"
+        android:label="@string/label_fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_EditFragment"
+            app:destination="@id/EditFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_HomeFragment_to_CreateFragment"
+            app:destination="@id/CreateFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/CreateFragment"
+        android:name="com.gesall.mat_och_sov_klocka.fragments.CreateFragment"
+        android:label="@string/label_fragment_edit"
+        tools:layout="@layout/fragment_create">
+        <action
+            android:id="@+id/action_CreateFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/EditFragment"
+        android:name="com.gesall.mat_och_sov_klocka.fragments.EditFragment"
+        android:label="label_fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_EditFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+</navigation>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Mat- och Sov-Klocka</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="label_fragment_home">Home Fragment</string>
+    <string name="label_fragment_edit">Edit Fragment</string>
+    <string name="label_fragment_create">Create Fragment</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="fragment_home">Home Fragment</string>
+    <string name="fragment_create">Create Fragment</string>
+    <string name="fragment_edit">Edit Fragment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_from_third">Hello from third!</string>
+    <string name="hello_from_home">Hello from Home Fragment</string>
+    <string name="hello_from_create">Hello from Create Fragment</string>
+    <string name="hello_from_edit">Hello from Edit Fragment</string>
+
+    <string name="to_create">to create</string>
+    <string name="to_edit">to edit</string>
+    <string name="to_home">to home</string>
+    <string name="create_name_for_timer">Name for timer:</string>
+    <string name="et_create_name_hint">Enter a name...</string>
+    <string name="create_time_for_timer">Enter a time</string>
+    <string name="snack_bar_text">SnackBarText</string>
+    <string name="snack_bar_undo">SnackBarUndo</string>
+    <string name="alarm_recurrance_once">Only once</string>
+    <string name="incase_no_name_entered">Alarm</string>
+
+
+</resources>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Mat- och Sov-Klocka"
